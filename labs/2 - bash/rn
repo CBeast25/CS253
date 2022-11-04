@@ -1,0 +1,27 @@
+#! /bin/bash
+
+old_suffix=$1
+new_suffix=$2
+
+if (( $# != 2 ))
+then
+    echo "Improper Number of Arguments: 2 needed $# given" >&2
+    exit 1
+fi
+
+for f in *.$old_suffix
+do
+    new_name=${f%.*}.$new_suffix
+    if [[ -e  $new_name ]]
+    then
+        echo "Can't rename $f to $new_name as $new_name already exists" >&2
+        exit 1
+    fi
+    if mv $f $new_name
+    then
+        echo Rename $f to $new_name
+    else
+        echo "Can't rename $f to $new_name" >&2
+        exit 1
+    fi
+done

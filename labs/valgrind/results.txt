@@ -1,0 +1,19 @@
+exp1: delete[] not called
+
+exp2: x[10] to memory outside allocated space, doesn't seg fault b/c the program thinks it is entitled to the memory, delete[] not called 
+
+exp3: x is not initialized if time(nullptr)!=42
+
+exp4: y is uninitialized unless now==0 which isn't possible
+
+exp5: the address can with x[12345678] is outside of the memory the program can use
+
+exp6: delete[] greeting is called before greeting is used
+
+exp7: delete was called on p instead of delete[]
+
+exp8: free() is called instead of delete[]
+
+exp9: a+=3 moves the pointer to an address that does not point to the heap
+
+exp10: an unsigned integer wraps around when it goes into the negative as this is a well defined behavior

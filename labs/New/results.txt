@@ -1,0 +1,15 @@
+1. A void pointer can point to any type
+2. double *p = new double and delete p call the default new and delete for c++ because new and delete are not called by a Foo object.
+   Foo *q and *r = new Foo and delete q and r call the class specific new and delete because they are called by a Foo object.
+   new and delete are declared static because any allocation function for a class is a static member (even if not explicitly declared static).
+3. The program tries to call new from outside the class but new is private.
+4. The program tries to call delete on a null object.
+5. So that only classes that extend NoNewDelete can access its constructors.
+6. Change if(!p) result from return to an error message.
+7. Specials characters like a return carriage or a vertical tab are characters that would stand out as they are not used often.
+8. Foo is the size of a single double variable or 8 bytes on this system. The difference between p and q is 20 in hex because memory is used in between p and q.
+   Bar is the size of a single double variable or 8 bytes on this system. The difference between r and s is 8 in hex because the memory is reserved for other Bars after r.
+9. Then Bar will inherit the new definitions. No it doesn't allocate the proper amount of space for Bar. Bar will need to redefine new and delete with Nodes of its size.
+10. The ratio is 3:1 with pooling being much faster because it already knows where to put the next object.
+11. The ratio is 4:1 with pooling being much smaller because the default new inneficiently allocates space for the objects.
+   
