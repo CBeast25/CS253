@@ -1,0 +1,5 @@
+/s/chopin/g/under/carsone/cs253/hw/hw5/build/CMakeFiles/rebuild_cache.dir
+/s/chopin/g/under/carsone/cs253/hw/hw5/build/CMakeFiles/edit_cache.dir
+/s/chopin/g/under/carsone/cs253/hw/hw5/build/CMakeFiles/hw5.tar.dir
+/s/chopin/g/under/carsone/cs253/hw/hw5/build/CMakeFiles/hw5.dir
+/s/chopin/g/under/carsone/cs253/hw/hw5/build/CMakeFiles/test.dir

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: hw5
+# Project: hw6
 # Configurations: Debug
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw5/build && /usr/bin/cmake --regenerate-during-build -S/s/chopin/g/under/carsone/cs253/hw/hw5 -B/s/chopin/g/under/carsone/cs253/hw/hw5/build
+  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw6/build && /usr/bin/cmake --regenerate-during-build -S/s/chopin/g/under/carsone/cs253/hw/hw6 -B/s/chopin/g/under/carsone/cs253/hw/hw6/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -51,7 +51,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw5/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw6/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -59,40 +59,40 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 
 #############################################
-# Utility command for hw5.tar
+# Utility command for hw6.tar
 
-build hw5.tar: phony CMakeFiles/hw5.tar
+build hw6.tar: phony CMakeFiles/hw6.tar
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target hw5
+# Object build statements for STATIC_LIBRARY target hw6
 
 
 #############################################
-# Order-only phony target for hw5
+# Order-only phony target for hw6
 
-build cmake_object_order_depends_target_hw5: phony || CMakeFiles/hw5.dir
+build cmake_object_order_depends_target_hw6: phony || CMakeFiles/hw6.dir
 
-build CMakeFiles/hw5.dir/Game.cc.o: CXX_COMPILER__hw5_Debug ../Game.cc || cmake_object_order_depends_target_hw5
-  DEP_FILE = CMakeFiles/hw5.dir/Game.cc.o.d
+build CMakeFiles/hw6.dir/Doc.cc.o: CXX_COMPILER__hw6_Debug ../Doc.cc || cmake_object_order_depends_target_hw6
+  DEP_FILE = CMakeFiles/hw6.dir/Doc.cc.o.d
   FLAGS = -g -Wall -Wextra -Wpedantic -fmessage-length=80 -fno-diagnostics-show-option -fstack-protector-all -g -O3 -std=c++17 -Walloc-zero -Walloca -Wconversion -Wctor-dtor-privacy -Wduplicated-cond -Wduplicated-branches -Werror -Wextra-semi -Wfatal-errors -Winit-self -Wlogical-op -Wold-style-cast -Wshadow -Wunused-const-variable=1 -Wzero-as-null-pointer-constant
-  OBJECT_DIR = CMakeFiles/hw5.dir
-  OBJECT_FILE_DIR = CMakeFiles/hw5.dir
+  OBJECT_DIR = CMakeFiles/hw6.dir
+  OBJECT_FILE_DIR = CMakeFiles/hw6.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target hw5
+# Link build statements for STATIC_LIBRARY target hw6
 
 
 #############################################
-# Link the static library libhw5.a
+# Link the static library libhw6.a
 
-build libhw5.a: CXX_STATIC_LIBRARY_LINKER__hw5_Debug CMakeFiles/hw5.dir/Game.cc.o
+build libhw6.a: CXX_STATIC_LIBRARY_LINKER__hw6_Debug CMakeFiles/hw6.dir/Doc.cc.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/hw5.dir
+  OBJECT_DIR = CMakeFiles/hw6.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libhw5.a
-  TARGET_PDB = hw5.a.dbg
+  TARGET_FILE = libhw6.a
+  TARGET_PDB = hw6.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test
@@ -101,7 +101,7 @@ build libhw5.a: CXX_STATIC_LIBRARY_LINKER__hw5_Debug CMakeFiles/hw5.dir/Game.cc.
 #############################################
 # Order-only phony target for test
 
-build cmake_object_order_depends_target_test: phony || cmake_object_order_depends_target_hw5
+build cmake_object_order_depends_target_test: phony || cmake_object_order_depends_target_hw6
 
 build CMakeFiles/test.dir/test.cc.o: CXX_COMPILER__test_Debug ../test.cc || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles/test.dir/test.cc.o.d
@@ -117,9 +117,9 @@ build CMakeFiles/test.dir/test.cc.o: CXX_COMPILER__test_Debug ../test.cc || cmak
 #############################################
 # Link the executable test
 
-build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cc.o | libhw5.a || libhw5.a
+build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cc.o | libhw6.a || libhw6.a
   FLAGS = -g
-  LINK_LIBRARIES = libhw5.a
+  LINK_LIBRARIES = libhw6.a
   OBJECT_DIR = CMakeFiles/test.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -128,15 +128,15 @@ build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cc.o | li
 
 
 #############################################
-# Custom command for CMakeFiles/hw5.tar
+# Custom command for CMakeFiles/hw6.tar
 
-build CMakeFiles/hw5.tar: CUSTOM_COMMAND
-  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw5/build && tar -cf hw5.tar *.cc *.h CMakeLists.txt
+build CMakeFiles/hw6.tar: CUSTOM_COMMAND
+  COMMAND = cd /s/chopin/g/under/carsone/cs253/hw/hw6/build && tar -cf hw6.tar *.cc *.h CMakeLists.txt
 
 # =============================================================================
 # Target aliases.
 
-build hw5: phony libhw5.a
+build hw6: phony libhw6.a
 
 # =============================================================================
 # Folder targets.
@@ -144,9 +144,9 @@ build hw5: phony libhw5.a
 # =============================================================================
 
 #############################################
-# Folder: /s/chopin/g/under/carsone/cs253/hw/hw5/build
+# Folder: /s/chopin/g/under/carsone/cs253/hw/hw6/build
 
-build all: phony hw5.tar libhw5.a test
+build all: phony hw6.tar libhw6.a test
 
 # =============================================================================
 # Built-in targets
